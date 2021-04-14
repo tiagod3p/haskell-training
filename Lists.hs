@@ -28,3 +28,21 @@ sumElements = sum list -- 28
 productElements = product list -- 5040
 
 isElementOnList x xs = x `elem` xs -- isElementOnList 5 list -----> True
+
+-- ranges
+zeroToTwenty = [0..20] -- [0, 1, 2, 3, 4.. 20]
+twentyToZero = [20, 19..0] -- [20, 19, 18, 17, 16.. 0]
+onlyEven = [0, 2..20] -- [0, 2, 4, 6 .. 20]
+onlyOdd = [1, 3..20] -- [1, 3, 5, 7 .. 19]
+
+alphabet = ['a'..'z'] -- "abcde..z"
+alphabetUppercase = ['A'..'Z'] -- "ABCDE..Z"
+
+-- infinite lists
+zeroToTwenty' = take 21 [0..] -- [0, 1, 2, 3, 4.. 20]
+
+cycleNumbers = take 6 (cycle [1, 2, 3]) -- [1, 2, 3, 1, 2, 3]
+cycleWords = take 15 (cycle "haskell ") -- "haskell haskell"
+
+repeatNumberFive = take 3 (repeat 5) -- [5, 5, 5]
+repeatNumberFive' = replicate 3 5 -- [5, 5, 5]
